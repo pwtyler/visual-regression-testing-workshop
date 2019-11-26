@@ -12,11 +12,12 @@ module.exports = function backstopConfig(nonProductionBaseUrl, productionBaseUrl
     const config = {
         'id': siteName,
         asyncCaptureLimit: 10,
-        'viewports': [{
-                'name': 'phone',
-                'width': 320,
-                'height': 480
-            },
+        'viewports': [
+            // {
+            //     'name': 'phone',
+            //     'width': 320,
+            //     'height': 480
+            // },
             {
                 'name': 'desktop',
                 'width': 1920,
@@ -37,7 +38,7 @@ module.exports = function backstopConfig(nonProductionBaseUrl, productionBaseUrl
             'label': 'Homepage',
             'url': trailingSlashIt(nonProductionBaseUrl),
             'referenceUrl': trailingSlashIt(productionBaseUrl),
-            'hideSelectors': ['.svg-icon'],
+            'hideSelectors': [],
             'selectors': ['document'],
             'readyEvent': null,
             'delay': delayTime,
