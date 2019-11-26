@@ -22,5 +22,25 @@ module.exports = {
             "/a-real-world-scalable-architecture",
             "/development-and-workflow",
         ]
+    },
+    "pwtyler": {
+        label: "PwTyler",
+        productionBaseUrl: "http://live-pwtyler.pantheonsite.io/",
+        nonProductionBaseUrl: "http://test-pwtyler.pantheonsite.io/",
+        pathsToTest: [
+            "/",
+            "/about-me/",
+            "/multiple-aliases-in-ssh-config/",
+            "/author/pwtyler/",
+            "/category/uncategorized/"
+        ]
+
+
+    },
+    "sticky-header":{
+        label:"sticky",
+        productionBaseUrl:"https://www.searchenginejournal.com/",
+        nonProductionBaseUrl:"https://www.searchenginejournal.com/",
+        pathsToTest:[]
     }
 };

@@ -22,12 +22,22 @@ module.exports = function backstopConfig(nonProductionBaseUrl, productionBaseUrl
                 'width': 1920,
                 'height': 1080
             }
+            // {
+            //     'name': 'tablet',
+            //     'width': 768,
+            //     'height': 1020
+            // },
+            // {
+            //     'name': 'tablet-h',
+            //     'width': 1020,
+            //     'height': 768
+            // },
         ],
         'scenarios': [{
             'label': 'Homepage',
             'url': trailingSlashIt(nonProductionBaseUrl),
             'referenceUrl': trailingSlashIt(productionBaseUrl),
-            'hideSelectors': [],
+            'hideSelectors': ['.svg-icon'],
             'selectors': ['document'],
             'readyEvent': null,
             'delay': delayTime,
